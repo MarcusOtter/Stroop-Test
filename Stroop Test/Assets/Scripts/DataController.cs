@@ -101,7 +101,7 @@ public class DataController : MonoBehaviour
         {
             EnableSsl = true,
             UseDefaultCredentials = false,
-            Credentials = new NetworkCredential("strooptestunity@gmail.com", _cred)
+            Credentials = new NetworkCredential("strooptestunity@gmail.com", _cred) as ICredentialsByHost
         };
 
         ServicePointManager.ServerCertificateValidationCallback =
